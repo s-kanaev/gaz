@@ -1,0 +1,790 @@
+<!--вставка 1-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>АвтоСервис. Программа АвтоСервис.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="description" content="Программа АвтоСервис. Система учета материалов и калькуляции стоимости работ на станциях технического обслуживания автомобилей.">
+<meta name="keywords" content="автомобиль, сервис, запчасти, ремонт, программа, автосервис, нормы, стоимость, учет, компьютер, программное, обеспечение, Alfa Romeo, Audi, BMW, Chrysler, Citroen, Daewoo, Daihatsu, Fiat, Ford, Honda, Hyundai, Isuzu, Jaguar, KIA, Land Rover, LDV, Mazda, Mercedes Benz, Mitsubishi, Nissan, Opel, Peugeot, Renault, Rover, Saab, Seat, Skoda, Ssang Yong, Subaru, Suzuki, Toyota, Volkswagen, Volvo">
+<style type="text/css"><!--
+BODY {margin: 0px; margin-top: 3px;}
+TABLE, BODY {font-family: arial,Verdana,sans-serif,times; font-size: 11px; color: #264F77}
+A, A:visited, A:hover {text-decoration: underline;}
+A, A:visited {color: #03041F;}
+A:hover, A:active {color: maroon;}
+LEGEND {color: #3975B0;}
+HR {height: 1px; color: #3975B0;}
+TEXTAREA, INPUT, SELECT {background-color: #E5F0F6; border: 1px solid #000000; font-family: arial,Verdana,sans-serif,times; font-size: 11px;}
+TEXTAREA {scrollbar-highlight-color: black; scrollbar-shadow-color: #000000; scrollbar-darkshadow-color: #FFFFFF; scrollbar-3dlight-color: #FFFFFF; scrollbar-arrow-color: #000000; scrollbar-track-color: #E5F0F6; scrollbar-base-color: #FFFFFF; scrollbar-face-color: silver}
+UL, OL {margin-top: 0px; margin-bottom: 0px;}
+P {text-indent: 16px; margin: 0px; text-align: justify;}
+FORM {margin: 0px;}
+IMG {border: 0px;}
+.small {font-size: 9px;}
+
+#content {padding: 0px 8px 8px 8px; border: 1px solid #3975B0;}
+H1 {margin: 8px -8px 8px -8px; padding: 8px; list-style-position: inside; font-size: 17px; display: list-item; background-color: #E5F0F6; color: #800000;}
+H1.n {color: #264F77;}
+H1#first_h1 {margin-top: 0px;}
+
+TABLE.type1 TD {border-right: 1px solid #D4C9CC; border-bottom: 1px solid #D4C9CC;}
+TABLE.type1 {border-left: 1px solid #D4C9CC; border-top: 1px solid #D4C9CC;}
+CAPTION {text-align: right; font-size: 15px; font-weight: bold;}
+THEAD {color: #FEFEFE; font-weight: bold; text-align: center; background-color: #9E4A4F;}
+H2 {display: inline; font-size: 15px;}
+
+.grey {background-color: #F3F3F3; text-align: center; font-weight: normal;}
+.type {background-color: #F3E7E9; text-align: center;}
+.col1 {font-weight: bold; width: 190px;}
+.col3 {text-align: right;}
+
+.iw {width: 250px;}
+-->
+</style>
+
+<!--конец вставки 1-->
+
+<link rel="StyleSheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<!--начало титула-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="left"><a href="http://2a2.ru/" title="&#171;А2&#187;. Оборудование для автосервиса"><img src="images/logo1.gif" border="0" width="75" height="52" alt="&#171;А2&#187;. Оборудование для автосервиса"></a></td>
+<th align="right" valign="middle" class="toptit" nowrap>
+<a href="http://2a2.ru/" title="Адрес сайта" class="toptit">http://2a2.ru/</a><br>
+e-mail:&#160;<a href="mailto:a2@2a2.ru,diacar@mail.ru?subject=From WWW" title="Написать письмо" class="toptit">a2@2a2.ru</a></th>
+</tr>
+</table>
+<div class="lineH">&#160;</div>
+<!--конец титула-->
+
+<!--начало страницы -->
+<table width="100%" border="0" cellpadding="0" cellspacing="2">
+<tr>
+<td width="85%" valign="top">
+<div class="lineR">
+
+<!--вставка 2-->
+<div id="content">
+<h1 id="first_h1">АвтоСервис. Программа АвтоСервис.</h1>
+
+Система учета материалов и калькуляции стоимости работ на станциях технического обслуживания автомобилей.
+<br>
+<b>Версия 7.1.9.1</b><br>
+<ul>
+<li><a href=#descr>О программе АвтоСервис</a><br>
+<li><a href=#whatnew>Что нового в версии 7.1.9.1</a><br>
+<li><a href=#recom>Требования и рекомендации</a><br>
+<li><a href=#price>Прайс-лист</a><br>
+<li><a href=#demo>Демо-версия</a><br>
+<li><a href=#order>Заказ программы АвтоСервис</a>
+</ul>
+
+<h1 id="descr">О программе АвтоСервис.</h1>
+<b>Версия 7.1.9.1</b> (<a href=#whatnew>Что нового?</a>)
+<br><br>
+Программа АвтоСервис предназначена для учета материалов и калькуляции стоимости работ на станциях
+технического обслуживания автомобилей.<br>
+Программа полностью формирует весь перечень необходимых первичных документов для оформления услуг по
+ремонту и продажи автозапчастей, ведет учет клиентов, их автомобилей,
+историй ремонтов каждого автомобиля.<br>
+Система содержит трудоемкости работ по техническому обслуживанию и ремонту автомобилей отечественного и иностранного производства.
+В настоящее
+время система включает в себя <u>нормы времени</u> по ремонту автомобилей
+следующих марок выпуска 1991-2004 гг:<br>
+<b>Alfa Romeo, Audi, BMW, Chrysler, Citroen, Daewoo, Daihatsu, Fiat, Ford, Honda, Hyundai
+, Isuzu, Iveco, Jaguar, KIA, Land Rover, LDV, Mazda, Mercedes Benz, Mitsubishi, Nissan, Opel, Peugeot, Proton,
+, Renault, Rover, Saab, Seat, Skoda, Ssang Yong, Subaru, Suzuki, Toyota, Volkswagen, Volvo,</b><br>
+а также <b>ВАЗ</b> (рассмотрено 44 модификации начиная с ВАЗ 2101 и заканчивая ВАЗ 2123 (Нива-Шевроле))
+, <b>ГАЗ</b> (включая ГАЗель и Соболь) и <b>ИЖ</b>, <b>УАЗ</b>, <b>ЗИЛ</b>, <b>КамАЗ</b>, <b>МАЗ</b>, <b>Ikarus</b>, <b>ПАЗ</b>, <b>ГолАЗ</b>, <b>ЛиАЗ</b>.<br><br>
+
+<center><b>Возможности системы</b></center>
+<br>
+<li>Сетевая платформа <b>Клиент-Сервер</b> (Interbase).<br><br>
+<li>Сколько угодно много <b>предприятий</b> (торгующих организаций).<br><br>
+<li>Полная <b>мультивалютность</b>. Возможность установки входных и отпускных цен в любой валюте,
+статистика курса валюты (а так же кросс-курсов) в виде таблицы и
+диаграмм (до пяти графиков одновременно).<br>
+<a href="http://autodealer.ru/img/autosrv/00.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/00_on.gif" alt="Диаграмма курса валют" width="113" height="80" border="0"></a>
+<br><br>
+<li>Ведение различных <b>справочников</b>.
+<ul type="circle">
+<li>Справочник по автомобилям для склада с возможностью установки применяемости товара по автомобилям;
+<li>Справочник по автомобилям для сервиса. Всего более <b>5 000 моделей и модификаций</b> с возможностью добавления и редактирования информации по автомобилям;
+<li>Справочники по нормо-часам - нормированные работы. <b>Около 1 500 тысяч нормативов</b> с возможностью создания собственных баз и редактирования имеющихся;
+<li>Справочник по нормо-часам на кузовные и окрасочные работы с разбиением по классам автомобилей;
+<li>Справочник по общим работам - работы, которые не зависят от конкретной марки или модели автомобиля;
+<li>Справочник по наборам работ с возможностью использования данных при анализе стоимости работ и при оформления документа заказ-наряда;
+<li>Справочник по клиентам с возможность установки неограниченного количества автомобилей для каждого клиента с получением статистики;
+<li>Справочник по поставщикам;
+<li>Справочник по сотрудникам;
+<li>Справочник по исполнителям работ. Формирование неограниченного количества бригад и одиночных исполнителей;
+<li>Классификатор товаров. Удобная система формирования ассортиметного перечня;
+<li>Справочник по предприятиям, с настройкой автоматической нумерации документов;
+<li>Справочник по валютам. Неограниченное количество валют с возможностью отслеживания и анализа неограниченного количества курсов валют;
+<li>Справочник по стоимости нормо-часа. Неограниченное количество с возможностью установки стоимости нормо-часа в любой валюте;
+<li>Справочник по единицам измерения с возможностью установки отношений между ними;
+<li>Общие справочники (Материалы, Тара, Упаковка, Виды оплаты, Коды бюджетной классификации,
+Коды ОКАТО, Места хранения, Подразделения,
+Должности, Источники информации, Виды ремонта, Фирмы производители,
+Способы доставки, Страны производители, Цвета, Нормативные документы, Коды заказ-нарядов и др.)
+</ul>
+<a href="http://autodealer.ru/img/autosrv/01.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/01_on.gif" alt="Справочник по исполнителям работ" width="56" height="79" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/02.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/02_on.gif" alt="Стоимость нормо-часа" width="81" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/03.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/03_on.gif" alt="Справочник по автомобилям для сервиса" width="105" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/04.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/04_on.gif" alt="Справочник по нормо-часам" width="109" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/05.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/05_on.gif" alt="Справочник по общим работам" width="110" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/06.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/06_on.gif" alt="Общие справочники" width="107" height="80" border="0"></a>
+<br><br>
+<li>Ведение <b>Склада</b> предприятия.
+<ul type="circle">
+<li>Приход и реализация товара с возможностью оформления соответствующих документов;
+<li>Резервирование товара по черновикам документов;
+<li>Различные виды сортировки и фильтрации документов;
+<li>Возможность формирования ведомости материальных остатков (состояние склада) на любую дату и время с точностью до одной секунды;
+<li>Возможность автоматического формирования расходной накладной на базе счета на оплату;
+<li>Возможность просматривать состояние склада по конкретным местам хранения;
+<li>Возможность получать подробную информацию по товару (распределение по метам хранения; предприятиям; "ходы" по документам);
+<li>Возможность получать подробную информацию по резервированию товара (по черновикам документов);
+<li>Возможность быстрого поиска по складу с использование подстановочных символов (* и ?);
+<li>Возможность отрицательного остатка на складе;
+<li>Возможность фильтрации товаров по группам спроса;
+<li>Возможность графического отображения состояния товара относительно его минимального и максимального запасов;
+</ul>
+<a href="http://autodealer.ru/img/autosrv/07.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/07_on.gif" alt="Склад" width="108" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/08.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/08_on.gif" alt="Информация по товару" width="114" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/09.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/09_on.gif" alt="Распределение резервирования" width="114" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/10.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/10_on.gif" alt="Классификатор товаров" width="111" height="80" border="0"></a>
+<br><br>
+<li>Составление <b>Калькуляции стоимости работ</b>.
+<ul type="circle">
+<li>Заполнения документа заказ-наряда с использованием европейских норм по конкретному автомобилю, а также собственных нормативных баз;
+<li>Анализ стоимости работ с возможностью формирования набора работ с их последующим использованием, как в самом анализе, так и при оформлении заказ-наряда;
+<li>Создание и ведение собственных нормативных баз в неограниченном количестве;
+<li>Использование в калькуляции работ с фиксированной стоимостью;</li>
+<li>Формирование приемо-сдаточного акта с наружным осмотром АМТС;
+<li>Формирование заявки на ремонт автомобиля с наружным осмотром АМТС;
+<li>Формирование акта на выполненные работы;
+<li>Формирование гарантийного акта;
+<li>Формирование требования на запчасти;
+<li>Возможность установки кратности, коэффициента сложности, стоимости нормо-часа, исполнителя как для каждой работы в заказ-наряде отдельно так и для всех;
+<li>Возможность включения в заказ-наряд сопутствующих работ (не используя нормативную базу системы);
+<li>Возможность включения в заказ-наряд сопутствующих товаров (не используя склад предприятия);
+<li>Импорт данных по товарам в заказ-наряд из внешнего источника (файла);
+</ul>
+<a href="http://autodealer.ru/img/autosrv/11.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/11_on.gif" alt="Список заказ-нарядов" width="113" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/12.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/12_on.gif" alt="Заказ-наряд" width="114" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/13.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/13_on.gif" alt="Заказ-наряд (Клиент)" width="114" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/14.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/14_on.gif" alt="Заказ-наряд (Акт осмотра автомобиля)" width="114" height="80" border="0"></a><br>
+<a href="http://autodealer.ru/img/autosrv/15.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/15_on.gif" alt="Заказ-наряд (Работы)" width="114" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/16.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/16_on.gif" alt="Работы - Установки" width="165" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/17.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/17_on.gif" alt="Заказ-наряд (Запчасти)" width="114" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/18.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/18_on.gif" alt="Пример Заказ-наряда" width="68" height="80" border="0"></a>
+<br><br>
+<li>Формирование и ведение списка <b>Сопутствующих документов</b>.
+Сопутствующие документы могут быть как самостоятельными, так и связанными с какими-либо другими документами.
+Например, при формировании документа заказ-наряд можно сформировать связанные с ним документы - приходный кассовый ордер,
+счет-фактура, счет на оплату и т.д.<br><br>
+<a href="http://autodealer.ru/img/autosrv/19.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/19_on.gif" alt="Платёжное поручение" width="106" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/20.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/20_on.gif" alt="Приходный кассовый ордер" width="102" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/21.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/21_on.gif" alt="Расходный кассовый ордер" width="102" height="80" border="0"></a>
+<br><br>
+<li><b>Отчеты</b>:
+<ul type="circle">
+<li>Склад
+<ul type="disc">
+<li>Реестр приходных накладных за любой период и для любого предприятия;
+<li>Реестр расходных накладных за любой период и для любого предприятия;
+<li>Реестр счетов на оплату за любой период и для любого предприятия;
+<li>Ведомость остатков для любого места хранения и на любую дату и время с точность до одной секунды;
+<li>Отчет по приходу за любой период и для любого предприятия;
+<li>Отчет по реализации за любой период и для любого предприятия;
+<li>Отчет по движению за любой период и для любого предприятия;
+</ul>
+<li>Сервис
+<ul type="disc">
+<li>Реестр заказ-нарядов за любой период и для любого предприятия;
+<li>Отчет по выполненным работам за любой период и для любого предприятия;
+<li>Отчет по бригаде;
+<li>Отчет по бригадам (выбором);
+<li>Отчет по исполнителям работ за любой период и для любого исполнителя;
+<li>Отчет по исполнителям работ (выбором);
+<li>Отчет по сервисному обслуживанию;
+<li>Отчет по сопутствующим материалам;
+</ul>
+<li>Аналитика
+<ul type="disc">
+<li>Отчет по видам оплаты;
+<li>Отчет по источникам информации;
+<li>Отчет по видам ремонта;
+</ul>
+<li>Документы
+<ul type="disc">
+<li>Реестр платежных поручений;
+<li>Реестр приходных кассовых ордеров;
+<li>Реестр расходных кассовых ордеров;
+<li>Реестр счетов-фактур;
+<li>Реестр платежей;
+</ul>
+<li>Встроенный дизайнер отчётов позволяет модифицировать отчётную форму под Ваши нужды.
+<li>Широкие возможности настройки параметров формирования отчётов позволяют получать до 100 и более
+модификаций каждого отчёта.
+<li>Возможность экспорта сформированного отчёта в различные форматы
+CVS (MS Excel), RTF (MS Word), текстовый файл, HTML (internet).
+</ul>
+<a href="http://autodealer.ru/img/autosrv/22.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/22_on.gif" alt="Отчёты" width="99" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/23.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/23_on.gif" alt="Параметры отчёта" width="64" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/24.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/24_on.gif" alt="Мастер настройки отчётных форм" width="75" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/25.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/25_on.gif" alt="Дизайнер отчётов" width="104" height="80" border="0"></a>
+<br><br>
+
+<li><b>Планирование</b>
+<ul type="circle">
+<li>Планирование предназначено для планирования рабочего времени и составления расписаний.
+Использование данной функции значительно упрощает централизованное управление планированием и
+распределением рабочего времени предприятия.
+Планирование на Вашем предприятии поможет Вам снизить потери рабочего времени всех подразделений,
+а следовательно повысить эффективность всего предприятия.
+<li>Создание неограниченного количества подразделений для планирования их работы.
+<li>Цветовое выделение заданий подразделениям.
+<li>Создание неограниченного количества собственных цветовых шаблонов для формирования заданий.
+<li>Планирование работы подразделений СТО по времени в течение дня, недели, месяца.
+<li>Быстрый ввод информации по заданиям (все операции производятся практически одним движением мыши)
+<li>Смена заданий между подразделениями.
+<li>Быстрый переход по дням, неделям и месяцам.
+<li>Поиск заданий в базе данных.
+<li>Быстрая очистка базы данных от выполненных (ненужных) заданий.
+<li>Возможность печати информации на принтере.
+<li>Возможность копирования (вырезания) и вставки уже введенных заданий.
+<li>Возможность автоматической подстановки текста в задание из шаблона.
+</ul>
+<a href="http://autodealer.ru/img/autosrv/26.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/26_on.gif" alt="Планирование работ" width="113" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/27.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/27_on.gif" alt="Планирование работ" width="113" height="80" border="0"></a>
+<br><br>
+<li><b>Связь с другими программами</b>
+<ul type="circle">
+<li>Импорт номенклатуры в классификатор товаров из внешних файлов (*.txt, *.dbf, *.db)
+<li>Тесная интеграция с программой <a href="http://autodealer.ru/soft/acat.php">АвтоКаталог</a> позволяет найти необходимую запчасть
+с автоматическим позиционированием на нужную иллюстрацию.
+<li>Возможность добавления запчасти из системы <a href="http://autodealer.ru/soft/acat.php">АвтоКаталог</a>
+<li>Возможность пакетного добавления запчастей из системы <a href="http://autodealer.ru/soft/acat.php">АвтоКаталог</a>
+(импорт раздела, группы, всей номенклатуры по автомобилю, корзины)
+</ul>
+<a href="http://autodealer.ru/img/autosrv/28.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/28_on.gif" alt="Импорт информации в классификатор" width="57" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/29.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/29_on.gif" alt="Автоматизация с системой АвтоКаталог" width="111" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/30.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/30_on.gif" alt="Связь с системой АвтоКаталог" width="112" height="80" border="0"></a>
+<br><br>
+<li><b>Сервисные возможности</b>
+<ul type="circle">
+<li>Большое количество параметров работы системы, настройка которых упростит работу.
+<li>Возможность работы с системой нескольких пользователей с разграничением прав доступа к различным частям программы в режиме состояния полного доступа, только чтения, отсутствия доступа.
+<li>Ведение журнала работы.
+<li>Встроенный SQL-редактор позволяет строить свои собственные запросы и получать необходимые выборки.
+<li>Встроенный проводник Windows. Возможность навигации по файлам и дискам компьютера непосредственно в окне системы.
+<li><b>Руководство пользователя, справочная система и советы дня</b>.
+</ul><br>
+<a href="http://autodealer.ru/img/autosrv/31.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/31_on.gif" alt="Параметры" width="107" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/32.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/32_on.gif" alt="Менеджер пользователей" width="129" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/33.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/33_on.gif" alt="Проводник" width="113" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/34.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/34_on.gif" alt="Совет дня" width="114" height="80" border="0"></a>
+<a href="http://autodealer.ru/img/autosrv/35.gif" target="_blank"><img src="http://autodealer.ru/img/autosrv/35_on.gif" alt="Справочная система" width="81" height="80" border="0"></a>
+<br><br>
+Более подробно ознакомиться с возможностями программы АвтоСервис Вы можете, скачав
+руководство пользователя:<br>
+<img src="http://autodealer.ru/img/word_ico.gif" width="16" height="16" align="absmiddle"> <a href="http://autodealer.ru/soft/download/autosrv/usr_guide.zip" title="Руководство пользователя">usr_guide.zip</a> (3.65 Mb)
+<br><br>
+<b>В комплект поставки каждого дистрибутива входят</b>:
+<ul>
+<li>Руководство пользователя;
+<li>Регистрационная карта (лист);
+<li>Компакт-диск с программой.
+</ul>
+По сравнению с аналогами данная система во многом их превосходит, т.к. разработана на основе требований Российских ГОСТов и
+стандартов, а по цене значительно дешевле. С экономической точки зрения при правильной организации работ, система позволяет сократить управленческий персонал, т.к. берет на себя такие важные вопросы как учет, оформление прихода и реализации запчастей, определение нормы времени и т.д., что практически приводит к быстрому оформлению заказа клиента на выполняемые работы.<br><br>
+
+Система "АвтоСервис" лучший выбор. Уникальность системы, дружественный интерфейс, широкие сервисные возможности,
+справочная система и руководство пользователя делают систему мощным инструментом и лучшим помощником.
+
+<h1 id="whatnew">Что нового в версии 7.1.9.1</h1>
+
+<b>АвтоСервис 7.1.9.1</b>&nbsp;&nbsp;[15.05.2006]<br><br>
+<ul>
+     <li> Внесены изменения в отчет "По движению".
+     <li> Общая оптимизация и корректировка алгоритмов.
+</ul>
+<br>
+
+<b>АвтоСервис 7.1.9</b>&nbsp;&nbsp;[21.04.2006]<br><br>
+<ul>
+     <li> Внесены изменения в отчет "Задание на ремонтные работы".
+    <li> Внесены изменения в отчет "Заявка на ремонт автомобиля".
+     <li> Внесены изменения в форму "Счет-фактура".
+     <li> Добавлена возможность печати списка заказ-нарядов.
+     <li> Добавлена возможность поиска в работах без учета регистра.
+     <li> Импорт материалов в заказ-наряд из внешнего файла ("Сопутствующие материалы" и/или "Материалы клиента").
+     <li> Общая оптимизация и корректировка алгоритмов.
+</ul>
+<br>
+
+
+<b>АвтоСервис 7.1.8</b>&nbsp;&nbsp;[17.11.2005]<br><br>
+<ul>
+<li>Отображение в Журнале работы операций по созданию, удалению, редактированию, проведению и возврату документов (приходные и расходные накладные, заказ-наряды).</li>
+<li>Исправлено отображение мин. и макс. остатка при просмотре состояния склада.</li>
+<li>Печать номенклатуры из окна состояния склада.</li>
+<li>Добавлена форма "Задание на ремонтные работы".</li>
+<li>Возможность получения отчета по реализации в средних приходных ценах.</li>
+<li>Настройка: "Пробег" - обязательное поле для заполнения.</li>
+<li>Общая оптимизация и корректировка алгоритмов.</li>
+</ul>
+<br>
+
+<b>АвтоСервис 7.1.7</b>&nbsp;&nbsp;[05.10.2005]<br><br>
+<ul>
+<li>Общая оптимизация и корректировка алгоритмов.</li>
+</ul>
+<br>
+
+<b>АвтоСервис 7.1.6</b>&nbsp;&nbsp;[12.09.2005]<br><br>
+<ul>
+<li>Возможность запретить дублирование товара при импорте в классификатор товаров из АвтоКаталога.</li>
+<li>Отображение суммы по документам (настройка).</li>
+<li>Общая оптимизация и корректировка алгоритмов.</li>
+<li>Справочная система и документация откорректированы с учетом новых изменений.</li>
+</ul>
+
+<br>
+
+<b>АвтоСервис 7.1.5</b>&nbsp;&nbsp;[22.08.2005]<br><br>
+<ul>
+<li>При заполнении нового заказ-наряда показывается последний пробег по текущему автомобилю.</li>
+<li>Новые возможности поиска и фильтрации в справочнике по клиентам.</li>
+<li>Возможность запретить дублирование товара при импорте в классификатор товаров.</li>
+<li>Оптимизация отчетов по исполнителям.</li>
+<li>Отображение суммы по документам (в списках джокументов).</li>
+<li>Общая оптимизация и корректировка алгоритмов.</li>
+<li>Справочная система и документация откорректированы с учетом новых изменений.</li>
+</ul>
+<br>
+<b>Версия 7.1</b>&nbsp;&nbsp;[<i>1 июня 2005 г.</i>]<br><br>
+<ul>
+<li>Обновлены нормативы трудоемкостей на слесарные и кузовные работы для автомобилей марки ВАЗ.</li>
+<li>Расширенная статистическая информация по клиентам.</li>
+<li>Расширенная статистическая информация по товарам.</li>
+<li>Расширенная статистическая информация по поставщикам.</li>
+<li>Изменения в платежных и отчетных документах.</li>
+<li>Общая оптимизация и корректировка алгоритмов.</li>
+<li>Справочная система и документация откорректированы с учетом новых изменений.</li>
+</ul><br>
+<b>Версия 7.0.2</b>&nbsp;&nbsp;[<i>13 января 2005 г.</i>]<br><br>
+<ul>
+<li>Добавлена новая форма платежного поручения (вводится с 01.01.2005).</li>
+</ul><br>
+<b>Версия 7.0.1</b>&nbsp;&nbsp;[<i>18 октября 2004 г.</i>]<br><br>
+<ul>
+<li>Исправлены ошибки в работе программы под ОС Windows 98, Me.</li>
+<li>Произведена общая оптимизация и корректировка алгоритмов.</li>
+</ul><br><br>
+<b>Версия 7.0</b>&nbsp;&nbsp;[<i>10 сентября 2004 г.</i>]
+<br><br>
+<b>
+Нормативная база
+</b>
+<ul>
+<li>Нормативы трудоемкостей на кузовные работы для автомобилей иностранного производства.
+<li>Нормативы трудоемкостей на слесарные работы для автомобилей иностранного производства (информация за 2004 год).
+<li>Нормативы трудоемкостей на слесарные и кузовные работы для автомобилей марки УАЗ.
+<li>Нормативы трудоемкостей на слесарные и кузовные работы для автомобилей марки ИЖ (информация за 2004 год).
+<li>Нормативы трудоемкостей на слесарные и кузовные работы для автомобилей марки ВАЗ (информация за 2004 год).
+<li>Нормативы трудоемкостей на слесарные и кузовные работы для автомобилей ГАЗ-3102, ГАЗ-3110 (информация за 2004 год).
+<li>Нормативы трудоемкостей на слесарные и кузовные работы для грузовых автомобилей МАЗ, ЗИЛ, КамАЗ с дизельным и карбюраторным двигателем.
+<li>Нормативы трудоемкостей на слесарные и кузовные работы для автобусов ПАЗ, ЛиАЗ, ГолАЗ, Mercedes Benz с дизельным и карбюраторным двигателем.
+<li>Общий объем нормативной базы вырос практически в два раза и включает в себя около полутора миллионов нормативов на различные автомобили.
+</ul>
+<b>Функциональная часть программы</b>
+<ul>
+<li>Произведены изменения справочников по автомобилям и нормо-часам в связи с добавлением новой информации.
+<li>В наборах работ в целях расширения их возможности реализовано составление калькуляций стоимости ремонта (как в анализе работ и заказ-нарядах).
+<li>Реализована возможность печати скалькулированных наборов работ.
+<li>В анализе работ, заказ-нарядах, наборах работ, в справочнике по общим работам реализована возможность применять работы с фиксированной стоимостью (работы, стоимость которых не зависит от значений нормо-часа, стоимости нормо-часа, коэффициента и кратности).
+<li>Реализована возможность экспорта информации из ряда справочников в форматы XLS (MS Excel), RTF (MS Word), TXT (Текстовый файл), HTML (Internet).
+<li>Более тесная интеграция с Системой "АвтоКаталог".
+<li>Произведена общая корректировка алгоритмов и устранены выявленные ошибки.
+</ul>
+<b>Отчеты</b>
+<ul>
+<li>Внесены изменения в отчет по приходу - расширено представление данных и параметров отчета
+<li>Внесены изменения в отчет по реализации - расширено представление данных и параметров отчета
+<li>Добавлен новый отчет "Реестр платежей" с возможностью выборки информации по типу документов, по статусу документов, по виду платежа.
+<li>Расширена возможность экспорта информации из отчетов.
+</ul>
+<b>Справочная система и документация</b>
+<ul>
+<li>Справочная система и документация откорректированы с учетом новых изменений.
+</ul>
+<br>
+
+<h1 id="recom">Требования и рекомендации.</h1>
+<b>Программные средства</b>
+<br>
+Система "АвтоСервис" тестировалась на следующих операционных системах:
+<ul>
+<li>WindowsR 98 Second Edition (<font color=red>не рекомендуется</font>)
+<li>WindowsR ME (<font color=red>не рекомендуется</font>)
+<li>WindowsR NT 4.0 + последние пакеты обновлений
+<li>WindowsR 2000 Professional + последние пакеты обновлений
+<li>WindowsR XP Professional or Home Edition + последние пакеты обновлений (<font color=green>рекомендуется</font>)
+<li>WindowsR 2003 Server Enterprise Edition + последние пакеты обновлений (<font color=green>рекомендуется</font>)
+</ul>
+<b>Для работы системы "АвтоСервис" требуется установка следующего программного обеспечения:</b>
+<ul>
+<li>Firebird Server Win32 build, v.1.5.1.4481 (входит в поставку)
+</ul>
+<b>Аппаратные средства</b>
+<ul>
+<li>Процессор семейств IntelR (PentiumR / CeleronR / XeonT), AMD (AthlonT / DuronT) тактовая частота которых составляет не менее 200 МГц. Работа на процессорах AMD K5 и AMD K6 не поддерживается. </li>
+<li>Минимальные требования к оперативной памяти зависят от используемой операционной системы: для Windows XP/2000/NT 4.0 - 64 Мб; Windows Me/98 - 32 Мб. При работе в многопроцессорных системах требуется дополнительно 16 Мб оперативной памяти для каждого дополнительного процессора. </li>
+<li>Видеоплата и монитор с разрешением не менее 800х600 точек, глубина цвета не менее 16bit. Рекомендуемые параметры: разрешение 1024х768 и более, глубина 16bit и более, мелкий шрифт, стандартная или классическая цветовая схема. </li>
+<li>Свободное место на жестком диске не менее 250 Mb. </li>
+<li>Клавиатура и манипулятор мышь. </li>
+<li>Для сетевого варианта наличие локальной вычислительной сети. Установленный протокол TCP/IP. </li>
+<li>CD-ROM привод (обязателен для установки и активации системы на компьютере).
+<br>
+<span class="clalert">Внимание!</span> Активация может не пройти в автоматическом режиме на некоторых типах приводов CD-ROM/R/RW и DVD-ROM/R/RW. Свяжитесь с
+технической поддержкой для консультации по данному вопросу.<br>
+Рекомендуемые CD-ROM приводы (Наиболее подходящие модели представлены в начале списка):
+<table class="small">
+<tr>
+
+<td valign="top">NEC CD-3002A <br>ASUS CD-S500/A <br>TOSHIBA SD-M1712 <br>LiteOn
+LTR-24102B <br>ACER 652P-031 <br>ASUS CD-S400/A <br>SAMSUNG SC-152L <br>SONY
+CRX225E <br>SONY DDU1621 <br>AOPEN DVD-1648 <br>BCD 48SB CD-ROM <br>SAMSUNG
+SM-348B <br>LiteOn LTR-32123S <br>LiteOn LTR-40125W <br>SONY CDU4821 <br>TOSHIBA
+SD-R1312 <br>ASUS CRW-4816A <br>ASUS CRW-4824A <br>ASUS CRW-5224A <br>HITACHI
+GD-5000 <br>LG DRD-8160B <br>LiteOn LTD163 <br>NEC NR-7800B <br>SONY CDU5221
+<br>SONY CRX230E <br>SONY DDU1612 <br>TOSHIBA XM-6302B <br>Ultima DHM-G48
+<br>ASUS CRW-2410A <br>LG DRD-8120B <br>MATSUSHITA UJDA740 <br>MITSUMI FX4824T
+<br>MSI MS-8152 <br>NEC NR-9200A <br>QSI SBW-241 <br></td>
+<td valign="top">TEAC CD-W540E <br>TEAC DV-516E <br>ASUS E616 <br>BTC BDV316C
+<br>CREATIVEDVD5240E-1 <br>LG GDR-8161B <br>LiteOn LTN526D <br>NEC DV-5800B
+<br>PIONEER DVD-119 <br>PIONEER DVD-120 <br>QPS CD-W540E <br>SAMSUNG CD-R/RW
+SW-224B R205 <br>SAMSUNG SC-140F <br>SAMSUNG SC-148S <br>SAMSUNG SDR-430
+<br>SONY CRX220E1 <br>TOSHIBA SD-M1612 <br>ASUS E612 <br>BTC E5SA <br>CyberDrive
+CW099D <br>LG GCC-4120B <br>LG GCE-8400B <br>LiteOn LTD163D <br>LiteOn LTN382
+<br>LiteOn LTR-48246S <br>LiteOn LTR-52246S <br>MATSUSHITA SR-8586
+<br>MATSUSHITA SR-8588 <br>MITSUMI CR-48XATE <br>MSI MS-8312 <br>NEC ND-1300A
+<br>NEC NR-9100A <br>QSI SBW-242 <br>SAMSUNG SC-152N <br>SONY CRX195E1 <br></td>
+<td valign="top">TOSHIBA XM-6202B <br>BENQ 5232P <br>BTC BCO4016IM <br>CREATIVE
+CD5233E <br>LG CRD-8400C(MAS) <br>LG CRD-8483B <br>LG CRD-8521B <br>LG GCE-8160B
+<br>LG GCE-8481B <br>LG GCE-8520B <br>LiteOn LDW-411S <br>LiteOn LTC-48161H
+<br>LiteOn LTN486S <br>LiteOn LTN526S <br>LiteOn LTR-40125S <br>MATSUSHITA
+CR-589 <br>MATSUSHITA SR-8175 <br>MATSUSHITA UJDA730 <br>MITSUMI CR-487ETE
+<br>MITSUMI DM-2000TE <br>MITSUMI FX54 <br>NEC NR-7500A <br>NEC NR-7800A
+<br>PIONEER DVR-103 <br>PLEXTOR PX-40TS <br>Polaroid BurnMAX48 482E <br>SAMSUNG
+SC-148T <br>SAMSUNG SM-308B <br>SAMSUNG SM-332B <br>SONY CRX160E <br>SONY
+CRX210E1 <br>YAMAHA CRW3200E <br>YAMAHA CRW-F1E <br></td>
+</tr>
+</table></li>
+</ul>
+
+<h1 id="price">Прайс-лист.</h1>
+
+Стоимость программы &quot;АвтоСервис 7.1.9.1&quot;: <b>9 900</b> рублей.<br>
+<br><br clear="all">
+<a href="#order">Заказать программу АвтоСервис</a>
+
+<h1 id="demo">Демо-версия.</h1>
+
+Вы можете взять Демо-версию одним файлом:<br>
+<ul class="download">
+<li><a href="http://autodealer.ru/soft/download/autosrv/autosrvf.exe">autosrvf.exe</a> (~ 21,3 Mb)</li>
+</ul>
+или по частям (самораспаковывающийся WinRAR-архив):
+<ul class="download">
+<li><a href="http://autodealer.ru/soft/download/autosrv/autosrv.part01.exe">Часть 1</a> (~ 1,38 Mb)</li>
+<li><a href="http://autodealer.ru/soft/download/autosrv/autosrv.part02.rar">Часть 2</a> (~ 1,38 Mb)</li>
+<li><a href="http://autodealer.ru/soft/download/autosrv/autosrv.part03.rar">Часть 3</a> (~ 1,38 Mb)</li>
+<li><a href="http://autodealer.ru/soft/download/autosrv/autosrv.part04.rar">Часть 4</a> (~ 1,38 Mb)</li>
+<li><a href="http://autodealer.ru/soft/download/autosrv/autosrv.part05.rar">Часть 5</a> (~ 1,38 Mb)</li>
+<li><a href="http://autodealer.ru/soft/download/autosrv/autosrv.part06.rar">Часть 6</a> (~ 1,38 Mb)</li>
+<li><a href="http://autodealer.ru/soft/download/autosrv/autosrv.part07.rar">Часть 7</a> (~ 1,38 Mb)</li>
+<li><a href="http://autodealer.ru/soft/download/autosrv/autosrv.part08.rar">Часть 8</a> (~ 1,38 Mb)</li>
+<li><a href="http://autodealer.ru/soft/download/autosrv/autosrv.part09.rar">Часть 9</a> (~ 1,38 Mb)</li>
+<li><a href="http://autodealer.ru/soft/download/autosrv/autosrv.part10.rar">Часть 10</a> (~ 1,38 Mb)</li>
+<li><a href="http://autodealer.ru/soft/download/autosrv/autosrv.part11.rar">Часть 11</a> (~ 1,38 Mb)</li>
+<li><a href="http://autodealer.ru/soft/download/autosrv/autosrv.part12.rar">Часть 12</a> (~ 1,38 Mb)</li>
+<li><a href="http://autodealer.ru/soft/download/autosrv/autosrv.part13.rar">Часть 13</a> (~ 1,38 Mb)</li>
+<li><a href="http://autodealer.ru/soft/download/autosrv/autosrv.part14.rar">Часть 14</a> (~ 1,38 Mb)</li>
+<li><a href="http://autodealer.ru/soft/download/autosrv/autosrv.part15.rar">Часть 15</a> (~ 1,38 Mb)</li>
+<li><a href="http://autodealer.ru/soft/download/autosrv/autosrv.part16.rar">Часть 16</a> (~ 581 Kb)</li>
+</ul>
+<br>Более подробно ознакомиться с возможностями программы АвтоСервис Вы можете, скачав
+руководство пользователя:<br>
+<img src="http://autodealer.ru/img/word_ico.gif" width="16" height="16" style="vertical-align: middle;">
+<a href="http://autodealer.ru/soft/download/autosrv/usr_guide.zip" title="Руководство пользователя программы АвтоСервис">usr_guide.zip</a> (3.65 Mb)
+
+<h1 id="order">Заказ программы АвтоСервис.</h1>
+<div class="dscr">
+<form action="http://www.autodealer.ru/p_order.php" name="order" target="_blank" method="post" onsubmit="return _check()">
+<input type="hidden" name="id" value="21">
+<input type="hidden" name="product[1][0]" value="1">
+<fieldset>
+<legend>Программа<br></legend>
+<table width="95%">
+<tr><td width="300">Количество, шт.</td><td><input type="text" name="product[1][1]" value="1" class="iw"></td></tr>
+</table>
+</fieldset>
+<fieldset>
+<legend>Получатель<br></legend>
+<table width="95%">
+<tr><td colspan="2">Одно из полей помеченных * обязательно должно быть заполнено.<br>
+Все поля помеченные ** должны быть заполнены.<br><br></td></tr>
+<tr><td width="300">Страна</td><td><select name="country" onchange="change_pay_type(this.value);" class="iw">
+<option value="1">Азербайджан</option>
+<option value="2">Армения</option>
+<option value="3">Белоруссия</option>
+<option value="4">Болгария</option>
+<option value="5">Грузия</option>
+<option value="6">Казахстан</option>
+<option value="7">Киргизия</option>
+<option value="8">Латвия</option>
+<option value="9">Литва</option>
+<option value="10">Молдавия</option>
+<option value="11" selected>Россия</option>
+<option value="12">Таджикистан</option>
+<option value="13">Туркменистан</option>
+<option value="14">Узбекистан</option>
+<option value="15">Украина</option>
+<option value="16">Эстония</option>
+<option value="17">Другая...</option>
+</select>
+</td></tr>
+<tr><td>* Контактное лицо</td><td><input type="text" name="fio" value="" class="iw"></td></tr>
+<tr><td>* Организация</td><td><input type="text" name="organization" value="" class="iw"></td></tr>
+<tr><td>** Адрес:<br><i>(индекс, город, адрес)</i></td><td><textarea rows="4" cols="40" name="address" class="iw"></textarea></td></tr>
+<tr><td>** Телефон (+ код города):</td><td><input type="text" name="phone" value="" class="iw"></td></tr>
+<tr><td>Факс:</td><td><input type="text" name="fax" value="" class="iw" onblur="fill_bank(this)"></td></tr>
+<tr><td>E-mail:</td><td><input type="text" name="email" value="" class="iw" onblur="fill_bank(this)"></td></tr>
+<tr><td>Ваши комментарии:</td><td><textarea rows="4" cols="40" name="comment" class="iw"></textarea></td></tr>
+</table>
+Укажите в комментарии, если Вы хотите заказать доставку курьером.<br>
+С примерными ценами и сроками доставки можно ознакомиться <a href="http://cityexpress.ru/R/towns/Ekat/russia.html" target="_blank">по России</a>,
+<a href="http://cityexpress.ru/R/towns/Ekat/cis.shtml" target="_blank">по СНГ</a>, <a href="http://cityexpress.ru/R/towns/Ekat/world.shtml" target="_blank">по всему миру</a>
+</fieldset>
+<fieldset>
+<legend>Способ оплаты<br></legend>
+<div id="pay_type_desc"><input type="radio" name="pay_type" value="2">
+<a href="http://www.webmoney.ru/" target="_blank">WebMoney</a> <b>(скидка 10%)</b> - Вам будет выставлен счет. После оплаты счёта, на Ваш адрес будет выслана ценная бандероль с программами и всей необходимой документацией.
+<fieldset id="pay2">
+<legend>Оплата WebMoney<br></legend>
+<table>
+<tr><td><input type="radio" name="wm_cur" value="r"> WebMoney R-кошелек</td><td rowspan="5" align="center">
+<a href="https://certsrv.webmoney.ru/certview.asp?wmid=819222614245" target="_blank">
+<img src="http://www.autodealer.ru/img/attestated.gif" alt="Аттестат нашего WM идентификатора 819222614245" width="88" height="31">
+<br>Проверить аттестат</a>
+</td></tr>
+<tr><td><input type="radio" name="wm_cur" value="z"> WebMoney Z-кошелек</td></tr>
+<tr><td><input type="radio" name="wm_cur" value="e"> WebMoney E-кошелек</td></tr>
+<tr><td><input type="radio" name="wm_cur" value="u"> WebMoney U-кошелёк</td></tr>
+<tr><td>WebMoney ID: <input type="text" name="wm_id" value=""></td></tr>
+</table>
+</fieldset>
+<br><br></div>
+<div id="pay_type_desc"><input type="radio" name="pay_type" value="3">
+Банковский перевод (безналичный расчёт) - На Ваш E-mail или факс будет выслан счет. После оплаты счёта и поступления средств на наш расчетный счет, на Ваш адрес будет выслана ценная бандероль с программами и всей необходимой документацией.
+<fieldset id="pay3">
+<legend>Как направить счёт</legend>
+<table>
+<tr><td>По E-mail</td><td><input type="Radio" name="sendby" value="email"> <input type="text" name="sendby_email" value="" style="width: 100px;"></td></tr>
+<tr><td>По факсу</td><td><input type="Radio" name="sendby" value="fax"> <input type="text" name="sendby_fax" value="" style="width: 100px;"></td></tr>
+<tr><td>ИНН</td><td><input type="text" name="inn" value="" style="width: 123px;" maxlength="12"></td></tr>
+</table>
+</fieldset>
+<br><br></div>
+<div id="pay_type_desc"><input type="radio" name="pay_type" value="5">
+Квитанция сбербанка - После оплаты в сбербанке по квитанции и поступления средств на наш расчетный счет, на Ваш адрес будет выслана ценная бандероль с программами и всей необходимой документацией.
+<fieldset id="pay5">
+<legend>Квитанция</legend>
+<ul>
+<li>Нажмите кнопку "Заказать"</li>
+<li>Будет открыт бланк квитанции.</li>
+<li>Распечатайте и оплатите квитанцию в Сбербанке</li>
+</ul>
+</fieldset>
+<br><br></div>
+<div id="pay_type_desc"><input type="radio" name="pay_type" value="6">
+<a href="http://money.yandex.ru/" target="_blank">Yandex.Деньги</a> <b>(скидка 10%)</b> - Вам будет выставлен счет. После оплаты счёта, на Ваш адрес будет выслана ценная бандероль с программами и всей необходимой документацией.
+<fieldset id="pay6">
+<legend>Yandex.Деньги</legend>
+<ul>
+<li>Откройте Ваш Интернет.Кошелёк</li>
+<li>Нажмите кнопку "Заказать"</li>
+<li>Интернет.Кошелёк автоматически сформирует счёт который необходимо оплатить.</li>
+</ul>
+<br>Если счёт не будет выставлен автоматически:
+<ul>
+<li>Убедитесь что у Вас запущен Интернет.Кошелёк</li>
+<li>Нажмите на кнопку "Выставить счёт"</li>
+<li>Так же Вы можете самостоятельно отправить деньги с помощью Вашего Интернет.Кошелька на счёт <span style="color: red;">4100113343847</span>, email: <span style="color: red;">postmaster@autodealer.ru</span></li>
+</ul>
+</fieldset>
+<br><br></div>
+</fieldset>
+<br><div align="center"><input type="submit" name="btn_submit" value="Заказать"></div>
+</form>
+</div>
+</div>
+<script type="text/javascript">
+<!--
+var inForm=document.order;
+var $all=document.all;
+
+function change_pay_type($country){
+for ($i=0;$i<inForm.pay_type.length;$i++) if (inForm.pay_type[$i]) {
+inForm.pay_type[$i].checked=false;
+inForm.pay_type[$i].disabled=($country!=11 && ($i==0 || $i==3));
+$all.pay_type_desc[$i].style.display=($country!=11 && ($i==0 || $i==3))?'none':'block';
+}
+_pay();
+}
+
+function fill_bank($tag){
+if (inForm.all['sendby_'+$tag.name].value=='') inForm.all['sendby_'+$tag.name].value=$tag.value
+}
+
+function _pay(){
+for(i=0;i<inForm.pay_type.length;i++) if ($all["pay"+inForm.pay_type[i].value])
+$all["pay"+inForm.pay_type[i].value].style.display=(inForm.pay_type[i].checked?'block':'none');
+}
+_pay();
+for(i=0;i<inForm.pay_type.length;i++){
+inForm.pay_type[i].onkeyup=_pay;
+inForm.pay_type[i].onclick=_pay;
+}
+
+function _check(){
+_type=false;
+ch=false;
+if (!(inForm['product[1][1]'].value>0)) {
+alert('Необходимо указать количество.');
+inForm['product[1][1]'].focus();
+return false;
+}
+if ((inForm.fio.value.length<1 && inForm.organization.value.length<1)
+|| inForm.address.value.length<1 || inForm.phone.value.length<1){
+alert('Одно из полей помеченных * обязательно должно быть заполнено.\nВсе поля помеченные ** должны быть заполнены.');
+return false;
+}
+for (i=0;i<inForm.pay_type.length;i++)
+if (inForm.pay_type[i] && inForm.pay_type[i].disabled==false && inForm.pay_type[i].checked) _type=inForm.pay_type[i].value;
+if (!_type) {alert('Выберите cпособ оплаты');return false;}
+switch(_type){
+//WM
+case "2":
+for (i=0;i<inForm.wm_cur.length;i++) if (inForm.wm_cur[i].checked) ch=true;
+if (!ch) {alert('Выберите кошелёк');return false;}
+if (inForm.wm_id.value.length<5) {alert('Необходимо указать WebMoney ID');inForm.wm_id.focus();return false;}
+break;
+//Bank
+case "3":
+for (i=0;i<inForm.sendby.length;i++) if (inForm.sendby[i].checked) ch=true;
+if (!ch) {alert('Выберите как направить счёт');return false;}
+if (inForm.sendby[0].checked && inForm.sendby_email.value.indexOf("@")==-1) {alert('Необходимо указать E-mail, на который отправить счёт');inForm.sendby_email.focus();return false;}
+if (inForm.sendby[1].checked && inForm.sendby_fax.value.length<5) {alert('Необходимо указать факс, на который отправить счёт');inForm.sendby_fax.focus();return false;}
+break;
+}
+
+return true;
+}
+//-->
+</script>
+<!--конец вставки 2-->
+
+<br>
+</div>
+</td>
+
+<td valign="top" class="menu" nowrap>
+<br>
+&#8226;<a href="../">главная</a><br><br>
+&#8226;<a href="../kontakt.html">где&#160;купить</a><br>
+&#8226;<a href="../price.html">цены</a><br><br>
+&#8226;<a href="../product.html">продукция</a><br>
+&#8226;<a href="../files.html">документация</a><br>
+&#8226;<a href="../autodiler/">программы</a><br><br>
+&#8226;<a href="../error/">коды&#160;ГАЗ</a><br>
+&#8226;<a href="../esud/">ЭСУД&#160;ГАЗ</a><br>
+&#8226;<a href="../patriot/">ЭСУД&#160;PATRIOT</a><br>
+&#8226;<a href="../vaz/">ЭСУД&#160;ВАЗ</a><br>
+&#8226;<a href="../steyr/">ЭСУД&#160;STEYR</a><br><br>
+&#8226;<a href="../sto/">автосервисы</a><br>
+&#8226;<a href="../links/">сайты</a><br><br>
+<div class="lineH">&#160;</div>
+<br>
+&#160;e-mail:<br>
+&#8226;<a href="mailto:a2@2a2.ru,diacar@mail.ru?subject=From WWW" title="Написать письмо">a2@2a2.ru</a>
+</td>
+</tr>
+</table>
+
+<div class="lineH">&#160;</div>
+<div align="right" class="toptit">&#169;&#160;2000&#8212;2013&#160;ООО&#160;&#171;А2&#187;;&#160;&#160;e-mail:&#160;<a href="mailto:a2@2a2.ru,diacar@mail.ru?subject=From WWW" title="Написать письмо" class="toptit">a2@2a2.ru</a></div>
+
+<center>
+<!-- SpyLOG v2 f:0211 -->
+<script language="javascript">
+u="u922.03.spylog.com";d=document;nv=navigator;na=nv.appName;p=0;j="N";
+d.cookie="b=b";c=0;bv=Math.round(parseFloat(nv.appVersion)*100);
+if (d.cookie) c=1;n=(na.substring(0,2)=="Mi")?0:1;rn=Math.random();
+z="p="+p+"&rn="+rn+"&c="+c;if (self!=top) {fr=1;} else {fr=0;}
+sl="1.0";</script><script language="javascript1.1">
+pl="";sl="1.1";j = (navigator.javaEnabled()?"Y":"N");</script>
+<script language=javascript1.2>
+sl="1.2";s=screen;px=(n==0)?s.colorDepth:s.pixelDepth;
+z+="&wh="+s.width+'x'+s.height+"&px="+px;
+</script><script language=javascript1.3>
+sl="1.3"</script><script language="javascript">
+y="";y+="<a href='http://"+u+"/cnt?f=3&p="+p+"&rn="+rn+"' target=_blank>";
+y+="<img src='http://"+u+"/cnt?"+z+"&j="+j+"&sl="+sl+
+"&r="+escape(d.referrer)+"&fr="+fr+"&pg="+escape(window.location.href);
+y+="' border=0 width=88 height=31 alt='SpyLOG'>";
+y+="</a>"; d.write(y);if(!n) { d.write("<"+"!--"); }//--></script><noscript>
+<a href="http://u922.03.spylog.com/cnt?f=3&p=0" target="_blank">
+<img src="http://u922.03.spylog.com/cnt?p=0" alt='SpyLOG' border='0' width=88 height=31 >
+</a></noscript><script language="javascript1.2"><!--
+if(!n) { d.write("--"+">"); }//--></script>
+<!-- SpyLOG -->
+
+<!--TopList COUNTER--><script language="JavaScript"><!--
+d=document;a='';a+=';r='+escape(d.referrer)
+js=10//--></script><script language="JavaScript1.1"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script><script language="JavaScript1.2"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script><script language="JavaScript1.3"><!--
+js=13//--></script><script language="JavaScript"><!--
+d.write('<a href="http://top.list.ru/jump?from=220888"'+
+' target="_blank"><img src="http://top.list.ru/counter'+
+'?id=220888;t=30;js='+js+a+';rand='+Math.random()+
+'" alt="TopList"'+' border=0 height=31 width=88></a>')
+if(js>11)d.write('<'+'!-- ')//--></script><noscript><a
+target="_blank" href="http://top.list.ru/jump?from=220888"><img
+src="http://top.list.ru/counter?js=na;id=220888;t=30"
+border=0 height=31 width=88
+alt="TopList"></a></noscript><script language="JavaScript"><!--
+if(js>11)d.write('--'+'>')//--></script>
+<!--TopList COUNTER-->
+
+<!--begin of Top100-->
+<a href="http://top100.rambler.ru/top100/"><img src="http://counter.rambler.ru/top100.cnt?632903" alt="Rambler's Top100" width=1 height=1 border=0></a>
+<!--end of Top100 code-->
+<!--begin of Top100 logo-->
+<a href="http://top100.rambler.ru/top100/"><img src="http://top100-images.rambler.ru/top100/banner-88x31-rambler-black2.gif" alt="Rambler's Top100" width=88 height=31 border=0></a>
+<!--end of Top100 logo -->
+
+</center>
+</body>
+</html>

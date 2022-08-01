@@ -1,0 +1,5 @@
+;Tabelle der Konfigurationsdaten für Programmstand X24c25r
+;
+Kennung   810005
+ECU       ME7.5
+MEMORY 800000 8FFFFF

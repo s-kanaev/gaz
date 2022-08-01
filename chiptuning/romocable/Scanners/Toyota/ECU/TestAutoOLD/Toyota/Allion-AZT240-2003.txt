@@ -1,0 +1,16 @@
+Автомобиль: Toyota Allion 2003 1AZ-FSE
+Тип ECU: Powertrain (двигатель, коробка)
+ID ECU:2G350
+Тип OBD:Неизвестно
+Датчики кислорода и их расположение:
+№1 После двигателя (Головка 1)
+
+
+Список PID у Mode1:
+ 00 01 03 04 05 06 07 0B 0C 0D 0E 0F 11 13 14 20
+ A0 A1 A2 A3 B0 B1 B2 B3 B4 BB BC BD BE C0 D1 D3
+ DA DD DF E0 E1 E3 E4 E7 E8 EC EF F7 F9 FB
+
+Список PID у Mode2:
+ 00 02 03 04 05 06 07 0B 0C 0D 0F A0 B0 C0 E0 E3
+ E8

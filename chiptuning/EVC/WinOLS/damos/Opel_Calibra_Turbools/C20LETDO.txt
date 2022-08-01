@@ -1,0 +1,17 @@
+OPEL-CALIBRA-2L  93j  No Immobil.TURBO;4WD
+Engine:C20LET DOHC   
+Controller Motronic M2.7:BOSCH 0 261 203 014 _55pin. With Vacum
+
+2EPROM 27256;Libe:1 267 357 220=014C7220
+             Libe:1 267 357 221=014C7221
+CPU1- b57828_68Plcc;
+CPU2-8052_40Dip ;
+Chip:30074_68plcc=TA13255A.;
+30015 ;  
+
+Sensor Engine:
+Air-mass meter:0 280 212 024.;70*70_ 6pin
+Coil+Amplifer;
+Ignition distibutor with Hall trigger;
+Engine-speed/reference-mark sensor -58/2;   
+

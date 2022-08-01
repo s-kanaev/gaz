@@ -1,0 +1,26 @@
+[ Comment of project ]
+PROJECT NAME           : S4300_14XEP
+PROJECT LONGIDENTIFIER : Objektspeicher ME762
+HEADER PROJECT_NO      : S4300_14XEP
+DAY OF CREATING        : 26.04.2005
+TIME OF CREATING       : 16:38:35
+ASAP2 FILE             : C:\Daten Konserve\Raimund Opel\X-Car\Z14XEP MY06\3212C1.A2L
+MASTER HEX FILE        : C:\Daten Konserve\Raimund Opel\X-Car\Z14XEP MY06\32120301.hex
+
+[ Comment of dataset ]
+COUNTER OF CHANGES     : 0
+DATASET                : AS: 32120301_1 (Opel X  Car  Z 14 XEP  06/3212C1/32120301/32120301_1)
+LAST USER              : Administrator
+DAY OF CHANGING        : 24.03.2005
+TIME OF CHANGING       : 16:15:48
+COMMENTS               : 
+
+die Quelle für diesen Datensatz steht in folgender HEX-Datei:
+C:\Daten Konserve\Raimund Opel\X-Car\Z14XEP MY06\32120301.hex
+24.03.2005 16:15:48 1848 KB
+
+der Programmcode wird für alle Datensätze in diesem Projekt (ASAM-MCD2 Beschreibung) verwendet.
+
+HEX-Datei C:\daten\A2l\Opel\Z14XEP06\32120301.hex erstellt.
+04.06.2005 22:07:32 1848 KB von: Samsung
+

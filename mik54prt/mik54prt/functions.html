@@ -1,0 +1,313 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Inside Mikas 5.4</title>
+</head>
+
+<BODY onUnload="spawntopfivewindow();" 
+
+ bgcolor="#004040"
+ TEXT="#ffffff"
+ LINK="#ffff00"
+ VLINK="#ffff00"
+ ALINK="#ffff00"
+>
+<script language="Javascript" src="http://www.fortunecity.com/js/adscript.global.new.js">
+</script>
+
+<script language="Javascript">
+<!-- hide
+
+DefineDefaultVars();
+
+
+DisplayFCAdBanner();
+
+// -->
+</script>
+
+
+<script language="Javascript" src="http://www.fortunecity.com/js/fctrack.js">
+</script>
+
+<noscript>
+<center><table border="0" cellpadding="0" cellspacing="0"><tr><td colspan="5"><img src="http://www.fortunecity.com/images/gray-pixel.gif" width="599" height="3"></td></tr><tr><td><img src="http://www.fortunecity.com/images/gray-pixel.gif" width="4" height="60"></td><td><iframe src="http://ad.doubleclick.net/adi/us/m_unclassified;kw=;sz=468x60;tile=1;ord=2001?" width="468" height="60" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"><a target="_top" href="http://ad.doubleclick.net/jump/us/m_unclassified;abr=!ie;sz=468x60;tile=1;ord=2001?"><img src="http://ad.doubleclick.net/ad/us/m_unclassified;abr=!ie;sz=468x60;tile=1;ord=2001?" border=0 height="60" width="468"></a></iframe></td><td><img src="http://www.fortunecity.com/images/gray-pixel.gif" width="4" height="60"></td><td><iframe src="http://ad.doubleclick.net/adi/us/m_unclassified;sz=120x60;tile=2;ord=2001?" width="120" height="60" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"><a target="_top" href="http://ad.doubleclick.net/jump/us/m_unclassified;abr=!ie;sz=120x60;tile=2;ord=2001?"><img src="http://ad.doubleclick.net/ad/us/m_unclassified;abr=!ie;sz=120x60;tile=2;pos=2;ord=2001?" border=0 height="60" width="120"></a></iframe></td><td><img src="http://www.fortunecity.com/images/gray-pixel.gif" width="3" height="60"></td></tr><tr><td colspan=5><img src="http://www.fortunecity.com/images/bottomrow.gif" width="599" height="15" border="0" usemap="#map"></td></tr></table><map name="map"><area shape="rect" coords="461,0,569,14" href="http://www.fortunecity.com/sponsor/" target="_new"><area shape="rect" coords="313,0,440,14" href="http://www.fortunecity.com/join/" target="_new"><area shape="rect" ALT="fortunecity.com" coords="29,0,138,14" href="http://www.fortunecity.com/" target="_new"><area shape="rect" coords="159,0,292,14" href="http://www.fortunecity.com/classification/topsites/" target="_new"></center>
+</noscript>
+
+
+<p align="center">Проект 'Inside Mikas 5.4'</p>
+
+<p align="center"><span style="background-color: #FFFF00"><font color="#000000">Предварительная
+информация.</font></span></p>
+
+<p align="center">Функции (все числа -
+шестнадцатеричные)
+</p>
+
+<table border="1" width="100%">
+  <tr>
+    <td width="8%">
+      <p align="center">Код функции</td>
+    <td width="12%">
+      <p align="center">Длина параметров</td>
+    <td width="32%">
+      <p align="center">Описание</td>
+    <td width="23%">
+      <p align="center">Формат запроса</td>
+    <td width="25%">
+      <p align="center">Формат ответа</td>
+  </tr>
+  <tr>
+    <td width="8%">01</td>
+    <td width="12%"> 0</td>
+    <td width="32%">Паспорт</td>
+    <td width="23%">01 CS CR</td>
+    <td width="25%">09 CS CR</td>
+  </tr>
+  <tr>
+    <td width="8%">11</td>
+    <td width="12%">1</td>
+    <td width="32%">	Считывание байта из внутреннего ОЗУ по адресу 0..255</td>
+    <td width="23%">11 ADDR8 CS CR</td>
+    <td width="25%">ADDR8 MEM[ADDR8] CS CR</td>
+  </tr>
+  <tr>
+    <td width="8%">12</td>
+    <td width="12%">2</td>
+    <td width="32%">	Запись байта во внутреннее ОЗУ по адресу 0..255</td>
+    <td width="23%">12 ADDR8 DATA CS CR</td>
+    <td width="25%">ADDR8 MEM[ADDR8] CS CR</td>
+  </tr>
+  <tr>
+    <td width="8%">13</td>
+    <td width="12%">2</td>
+    <td width="32%">	Считывание байта из ОЗУ по 16 разрядному адресу</td>
+    <td width="23%">13 ADDR16L ADDR16H CS CR</td>
+    <td width="25%">ADDR16L ADDR16H MEM[ADDR16] CS CR</td>
+  </tr>
+  <tr>
+    <td width="8%">15</td>
+    <td width="12%">2</td>
+    <td width="32%">	Считывание байта из ПЗУ по 16 разрядному адресу (если аддрес >=F800 то из ОЗУ)</td>
+    <td width="23%">15 ADDR16L ADDR16H CS CR</td>
+    <td width="25%">ADDR16L ADDR16H MEM[ADDR16] CS CR</td>
+  </tr>
+  <tr>
+    <td width="8%">14</td>
+    <td width="12%">3</td>
+    <td width="32%">	Запись байта в ОЗУ по 16 разрядному адресу</td>
+    <td width="23%">14 ADDR16L ADDR16H DATA CS CR</td>
+    <td width="25%">ADDR16L ADDR16H MEM[ADDR16] CS CR</td>
+  </tr>
+  <tr>
+    <td width="8%">16</td>
+    <td width="12%">3</td>
+    <td width="32%">	Запись байта в ПЗУ(в данной
+      версии в ОЗУ) по 16 разрядному адресу</td>
+    <td width="23%">16 ADDR16L ADDR16H DATA CS CR</td>
+    <td width="25%">ADDR16L ADDR16H MEM[ADDR16] CS CR</td>
+  </tr>
+  <tr>
+    <td width="8%">21</td>
+    <td width="12%">2</td>
+    <td width="32%">	Считывание N байт из внутренного ОЗУ
+      начиная с заданного адреса</td>
+    <td width="23%">21 ADDR8 N CS CR</td>
+    <td width="25%">ADDR8 N MEM[ADDR8] .. MEM[ADDR8+N-1] CS CR</td>
+  </tr>
+  <tr>
+    <td width="8%">22</td>
+    <td width="12%">&gt;=3</td>
+    <td width="32%">	Запись N байт во внутреннее ОЗУ начиная с заданного адреса</td>
+    <td width="23%">22 ADDR8 N DATA1 .. DATAN CS CR</td>
+    <td width="25%">00/01 CS CR	(OO - OK, 01 - ошибка записи)</td>
+  </tr>
+  <tr>
+    <td width="8%">23</td>
+    <td width="12%">3</td>
+    <td width="32%">	Считывание N байт из ОЗУ на начиная с заданного адреса</td>
+    <td width="23%">23 ADDR16L ADDR16H N CS CR</td>
+    <td width="25%">ADDR16L ADDR16H N MEM[ADDR16] .. MEM[ADDR16+N-1] CS CR</td>
+  </tr>
+  <tr>
+    <td width="8%">25</td>
+    <td width="12%">3</td>
+    <td width="32%">	Считывание N байт из ПЗУ на начиная с заданного адреса</td>
+    <td width="23%">25 ADDR16L ADDR16H N CS CR</td>
+    <td width="25%">ADDR16L ADDR16H N MEM[ADDR16] .. MEM[ADDR16+N-1] CS CR</td>
+  </tr>
+  <tr>
+    <td width="8%">24</td>
+    <td width="12%"> >=4</td>
+    <td width="32%">	Запись N байт в ОЗУ начиная с заданного адреса</td>
+    <td width="23%">26 ADDR16L ADDR16H N DATA1 .. DATA N CS CR</td>
+    <td width="25%">00/01 CS CR	(OO - OK, 01 - ошибка записи)</td>
+  </tr>
+  <tr>
+    <td width="8%">26</td>
+    <td width="12%"> >=4</td>
+    <td width="32%">	Запись N байт в ПЗУ(в данной
+      версии в ОЗУ) начиная с заданного адреса</td>
+    <td width="23%">26 ADDR16L ADDR16H N DATA1 .. DATA N CS CR</td>
+    <td width="25%">00/01 CS CR	(OO - OK, 01 - ошибка записи)</td>
+  </tr>
+  <tr>
+    <td width="8%">31</td>
+    <td width="12%">1</td>
+    <td width="32%">	Считывание регистра</td>
+    <td width="23%">31 R CS CR</td>
+    <td width="25%">R (R) CS CR</td>
+  </tr>
+  <tr>
+    <td width="8%">32</td>
+    <td width="12%">2</td>
+    <td width="32%">	Запись регистра</td>
+    <td width="23%">32 R DATA CS CR</td>
+    <td width="25%">R DATA CS CR</td>
+  </tr>
+  <tr>
+    <td width="8%">41</td>
+    <td width="12%">2</td>
+    <td width="32%">	Перезапуск по заданному адресу</td>
+    <td width="23%">41 ADDR16L ADDR16H CS CR</td>
+    <td width="25%">CR</td>
+  </tr>
+  <tr>
+    <td width="8%">02</td>
+    <td width="12%">0</td>
+    <td width="32%">	Считывание кодов ошибок</td>
+    <td width="23%">2 CS CR</td>
+    <td width="25%">N [Code1 00/40] .. [CodeN 00/40] (надо уточнить)</td>
+  </tr>
+  <tr>
+    <td width="8%">51</td>
+    <td width="12%">0</td>
+    <td width="32%">Считывание строки
+      идентификатора 1</td>
+    <td width="23%">51 CS CR</td>
+    <td width="25%">S1 .. S16 CS CR (S-строка &quot;МИКАС-5.47&quot;
+      DOS кодировка, дополнено нулевыми байтами
+      до 16 байт)</td>
+  </tr>
+  <tr>
+    <td width="8%">52</td>
+    <td width="12%">0</td>
+    <td width="32%">Считывание строки
+      идентификатора 2</td>
+    <td width="23%">52 CS CR</td>
+    <td width="25%">S1 .. S16 CS CR (&quot;HT7DA442&quot; -.-)</td>
+  </tr>
+  <tr>
+    <td width="8%">53</td>
+    <td width="12%">0</td>
+    <td width="32%">Считывание строки
+      идентификатора 3</td>
+    <td width="23%">53 CS CR</td>
+    <td width="25%">S1 .. S16 CS CR (&quot;69B&quot; -.-)</td>
+  </tr>
+  <tr>
+    <td width="8%">54</td>
+    <td width="12%">0</td>
+    <td width="32%">Считывание строки
+      идентификатора 4</td>
+    <td width="23%">54 CS CR</td>
+    <td width="25%">S1 .. S16 CS CR (S-строка &quot;МИКАС-5.4&quot;
+      DOS кодировка, дополнено пробелами до 16
+      байт)</td>
+  </tr>
+  <tr>
+    <td width="8%">55</td>
+    <td width="12%">0</td>
+    <td width="32%">Считывание строки
+      идентификатора 5</td>
+    <td width="23%">55 CS CR</td>
+    <td width="25%">S1 .. S16 CS CR (&quot;69B&quot; -.-)</td>
+  </tr>
+  <tr>
+    <td width="8%">56</td>
+    <td width="12%">0</td>
+    <td width="32%">Считывание строки
+      идентификатора 6 (Код/версия прошивки)</td>
+    <td width="23%">56 CS CR</td>
+    <td width="25%">S1 .. S16 CS CR (&quot;Z4{A}591&quot; -.-)</td>
+  </tr>
+  <tr>
+    <td width="8%">57</td>
+    <td width="12%">0</td>
+    <td width="32%">Считывание строки
+      идентификатора 7 (Дата прошивки)</td>
+    <td width="23%">57 CS CR</td>
+    <td width="25%">S1 .. S16 CS CR (&quot;6/8/98 10:52&quot; -.-)</td>
+  </tr>
+  <tr>
+    <td width="8%">58</td>
+    <td width="12%">0</td>
+    <td width="32%">Считывание строки
+      идентификатора 8 (Тип двигателя)</td>
+    <td width="23%">58 CS CR</td>
+    <td width="25%">S1 .. S16 CS CR (&quot;ZMZ_406&quot; -.-)</td>
+  </tr>
+  <tr>
+    <td width="8%">60</td>
+    <td width="12%">0</td>
+    <td width="32%">Считывание количества
+      переменных?</td>
+    <td width="23%">60 CS CR</td>
+    <td width="25%">98 CS CR</td>
+  </tr>
+  <tr>
+    <td width="8%">62</td>
+    <td width="12%">x</td>
+    <td width="32%">Считывание переменных в цикле?</td>
+    <td width="23%"></td>
+    <td width="25%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="8%">63</td>
+    <td width="12%">0</td>
+    <td width="32%">Считывание переменных из набора?</td>
+    <td width="23%">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="8%">64</td>
+    <td width="12%">&gt;=1</td>
+    <td width="32%">Запись набора переменных?</td>
+    <td width="23%">64 V1 [.. VN] CS CR</td>
+    <td width="25%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="8%">61</td>
+    <td width="12%">&gt;=1</td>
+    <td width="32%">Считывание переменных</td>
+    <td width="23%">61 V1 [.. VN] CS CR</td>
+    <td width="25%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="8%">71</td>
+    <td width="12%">0</td>
+    <td width="32%">Остановить выдачу переменных?</td>
+    <td width="23%">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+  </tr>
+</table>
+
+
+<script language="Javascript">
+<!--hide
+
+var my_clientip = '195.161.24.6';
+
+setonclickmethods();
+setvisitorcookie(my_clientip);
+DisplayBRM(1);
+//-->
+</script>
+
+
+</body>
+</html>

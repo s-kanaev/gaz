@@ -1,0 +1,116 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Inside Mikas 5.4</title>
+</head>
+
+<BODY onUnload="spawntopfivewindow();" 
+
+ bgcolor="#004040"
+ TEXT="#ffffff"
+ LINK="#ffff00"
+ VLINK="#ffff00"
+ ALINK="#ffff00"
+>
+<script language="Javascript" src="http://www.fortunecity.com/js/adscript.global.new.js">
+</script>
+
+<script language="Javascript">
+<!-- hide
+
+DefineDefaultVars();
+
+
+DisplayFCAdBanner();
+
+// -->
+</script>
+
+
+<script language="Javascript" src="http://www.fortunecity.com/js/fctrack.js">
+</script>
+
+<noscript>
+<center><table border="0" cellpadding="0" cellspacing="0"><tr><td colspan="5"><img src="http://www.fortunecity.com/images/gray-pixel.gif" width="599" height="3"></td></tr><tr><td><img src="http://www.fortunecity.com/images/gray-pixel.gif" width="4" height="60"></td><td><iframe src="http://ad.doubleclick.net/adi/us/m_unclassified;kw=;sz=468x60;tile=1;ord=2001?" width="468" height="60" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"><a target="_top" href="http://ad.doubleclick.net/jump/us/m_unclassified;abr=!ie;sz=468x60;tile=1;ord=2001?"><img src="http://ad.doubleclick.net/ad/us/m_unclassified;abr=!ie;sz=468x60;tile=1;ord=2001?" border=0 height="60" width="468"></a></iframe></td><td><img src="http://www.fortunecity.com/images/gray-pixel.gif" width="4" height="60"></td><td><iframe src="http://ad.doubleclick.net/adi/us/m_unclassified;sz=120x60;tile=2;ord=2001?" width="120" height="60" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"><a target="_top" href="http://ad.doubleclick.net/jump/us/m_unclassified;abr=!ie;sz=120x60;tile=2;ord=2001?"><img src="http://ad.doubleclick.net/ad/us/m_unclassified;abr=!ie;sz=120x60;tile=2;pos=2;ord=2001?" border=0 height="60" width="120"></a></iframe></td><td><img src="http://www.fortunecity.com/images/gray-pixel.gif" width="3" height="60"></td></tr><tr><td colspan=5><img src="http://www.fortunecity.com/images/bottomrow.gif" width="599" height="15" border="0" usemap="#map"></td></tr></table><map name="map"><area shape="rect" coords="461,0,569,14" href="http://www.fortunecity.com/sponsor/" target="_new"><area shape="rect" coords="313,0,440,14" href="http://www.fortunecity.com/join/" target="_new"><area shape="rect" ALT="fortunecity.com" coords="29,0,138,14" href="http://www.fortunecity.com/" target="_new"><area shape="rect" coords="159,0,292,14" href="http://www.fortunecity.com/classification/topsites/" target="_new"></center>
+</noscript>
+
+
+<p align="center">Проект 'Inside Mikas 5.4'</p>
+<p align="center">
+<span style="background-color: #FFFF00"><font color="#000000">
+На этой странице в ближайшее время появится информация о протоколе обмена блока управления двигателем МИКАС 5.4</font></span>
+</p>
+
+<p>Итак, протокол:
+</p>
+
+<p>Обмен происходит по последовательному
+порту в формате 9600,n,8,1
+</p>
+
+<p>Для сопряжения RS-232 с K-LINE используем
+специальный переходничёк (см. например <a href="http://kwp2000.boom.ru/">http://kwp2000.boom.ru/</a>)
+</p>
+
+<p>Блоки запросов и ответов имеют следующий
+формат:
+</p>
+
+<p>D1 [.. DN] CS CR
+</p>
+
+<p>где:
+</p>
+
+<p>D1 [.. DN] - один или более информационных
+байтов
+</p>
+
+<p>CS - контрольная сумма = -(D1+..+DN) mod 256
+</p>
+
+<p>CR - код 0D (Возврат Каретки)
+</p>
+
+<p><a href="./functions.html">Список функций</a>
+ - версия от 15.09.2000
+</p>
+
+<p><a href="./variables.html">Список переменных</a> -
+версия от 14.09.2000
+</p>
+
+<p><a href="proms.html">Прошивки</a>
+</p>
+
+<hr>
+
+<table width=100% cols=1 border=0 cellpadding=10>
+<tr>
+<td align=center valign=middle>
+This page has been visited 
+<!-- FCHBcounter start -->
+<img src="http://www2.fortunecity.com/user-cgi/Count.cgi?df=tigrych.002">
+<!-- FCHBcounter end -->
+ times.
+</table>
+
+
+<script language="Javascript">
+<!--hide
+
+var my_clientip = '195.161.24.6';
+
+setonclickmethods();
+setvisitorcookie(my_clientip);
+DisplayBRM(1);
+//-->
+</script>
+
+
+</body>
+</html>

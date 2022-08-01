@@ -1,0 +1,434 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Inside Mikas 5.4</title>
+</head>
+
+<BODY onUnload="spawntopfivewindow();" 
+
+ bgcolor="#004040"
+ TEXT="#ffffff"
+ LINK="#ffff00"
+ VLINK="#ffff00"
+ ALINK="#ffff00"
+>
+<script language="Javascript" src="http://www.fortunecity.com/js/adscript.global.new.js">
+</script>
+
+<script language="Javascript">
+<!-- hide
+
+DefineDefaultVars();
+
+
+DisplayFCAdBanner();
+
+// -->
+</script>
+
+
+<script language="Javascript" src="http://www.fortunecity.com/js/fctrack.js">
+</script>
+
+<noscript>
+<center><table border="0" cellpadding="0" cellspacing="0"><tr><td colspan="5"><img src="http://www.fortunecity.com/images/gray-pixel.gif" width="599" height="3"></td></tr><tr><td><img src="http://www.fortunecity.com/images/gray-pixel.gif" width="4" height="60"></td><td><iframe src="http://ad.doubleclick.net/adi/us/m_unclassified;kw=;sz=468x60;tile=1;ord=2001?" width="468" height="60" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"><a target="_top" href="http://ad.doubleclick.net/jump/us/m_unclassified;abr=!ie;sz=468x60;tile=1;ord=2001?"><img src="http://ad.doubleclick.net/ad/us/m_unclassified;abr=!ie;sz=468x60;tile=1;ord=2001?" border=0 height="60" width="468"></a></iframe></td><td><img src="http://www.fortunecity.com/images/gray-pixel.gif" width="4" height="60"></td><td><iframe src="http://ad.doubleclick.net/adi/us/m_unclassified;sz=120x60;tile=2;ord=2001?" width="120" height="60" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"><a target="_top" href="http://ad.doubleclick.net/jump/us/m_unclassified;abr=!ie;sz=120x60;tile=2;ord=2001?"><img src="http://ad.doubleclick.net/ad/us/m_unclassified;abr=!ie;sz=120x60;tile=2;pos=2;ord=2001?" border=0 height="60" width="120"></a></iframe></td><td><img src="http://www.fortunecity.com/images/gray-pixel.gif" width="3" height="60"></td></tr><tr><td colspan=5><img src="http://www.fortunecity.com/images/bottomrow.gif" width="599" height="15" border="0" usemap="#map"></td></tr></table><map name="map"><area shape="rect" coords="461,0,569,14" href="http://www.fortunecity.com/sponsor/" target="_new"><area shape="rect" coords="313,0,440,14" href="http://www.fortunecity.com/join/" target="_new"><area shape="rect" ALT="fortunecity.com" coords="29,0,138,14" href="http://www.fortunecity.com/" target="_new"><area shape="rect" coords="159,0,292,14" href="http://www.fortunecity.com/classification/topsites/" target="_new"></center>
+</noscript>
+
+
+<p align="center">Проект 'Inside Mikas 5.4'</p>
+<p align="center"><span style="background-color: #FFFF00"><font color="#000000">Предварительная
+информация.</font></span></p>
+<p align="center">Переменные VN (все числа -
+шестнадцатеричные)</p>
+<table border="1" width="100%">
+  <tr>
+    <td width="6%">
+      <p align="center">Код</td>
+    <td width="12%">
+      <p align="center">Название</td>
+    <td width="42%">
+      <p align="center">Описание</td>
+    <td width="14%">
+      <p align="center">Единицы измерения</td>
+    <td width="26%">
+      <p align="center">Примечание</td>
+  </tr>
+  <tr>
+    <td width="6%">1</td>
+    <td width="12%">Побитно</td>
+    <td width="42%">Коды комплектации 1</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">2</td>
+    <td width="12%">Побитно</td>
+    <td width="42%">Коды комплектации 2</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">3</td>
+    <td width="12%">Побитно</td>
+    <td width="42%">Коды комплектации 3</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">4</td>
+    <td width="12%">Побитно</td>
+    <td width="42%">Коды комплектации 4</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">5</td>
+    <td width="12%">Побитно</td>
+    <td width="42%">Коды комплектации 5</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">6</td>
+    <td width="12%">Побитно</td>
+    <td width="42%">Коды комплектации 6</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">7</td>
+    <td width="12%">Побитно</td>
+    <td width="42%">Режим 1</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">7.x</td>
+    <td width="12%">RXX</td>
+    <td width="42%">Признак холостого хода</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">7.x</td>
+    <td width="12%">BITPOW</td>
+    <td width="42%">Признак режима полной мощности</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">7.x</td>
+    <td width="12%">RDET</td>
+    <td width="42%">Признак работы регулятора УОЗ по детонации</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">8</td>
+    <td width="12%">Побитно</td>
+    <td width="42%">Режим 2</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">8.x</td>
+    <td width="12%">INPLAM1</td>
+    <td width="42%">Сост.1 L-зонда(1-бог./0-бедн. смесь)</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">8.x</td>
+    <td width="12%">DET</td>
+    <td width="42%">Признак детонации</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">15</td>
+    <td width="12%">?</td>
+    <td width="42%">&nbsp;</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">1A</td>
+    <td width="12%">TWAT</td>
+    <td width="42%">Температура охлаждающей жидкости</td>
+    <td width="14%">град. Цельсия</td>
+    <td width="26%">1=-39.0</td>
+  </tr>
+  <tr>
+    <td width="6%">1C</td>
+    <td width="12%">TAIR</td>
+    <td width="42%">Температура воздуха</td>
+    <td width="14%">град. Цельсия</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">1E</td>
+    <td width="12%">&nbsp;</td>
+    <td width="42%">&nbsp;</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">20</td>
+    <td width="12%">THR</td>
+    <td width="42%">Положение дроссельной заслонки</td>
+    <td width="14%">%</td>
+    <td width="26%">1=1%</td>
+  </tr>
+  <tr>
+    <td width="6%">21</td>
+    <td width="12%">JAIR</td>
+    <td width="42%">Массовый расход воздуха</td>
+    <td width="14%">кг/час</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">23</td>
+    <td width="12%">PABS</td>
+    <td width="42%">Абсолютное давление во впускном коллекторе</td>
+    <td width="14%">мбар</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">26</td>
+    <td width="12%">UOZ</td>
+    <td width="42%">Угол опережения зажиганоя</td>
+    <td width="14%">град. ПКВ</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">28</td>
+    <td width="12%">UOZOC</td>
+    <td width="42%">Поправка угла опережения зажигания</td>
+    <td width="14%">град. ПКВ</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">29</td>
+    <td width="12%">FREQ</td>
+    <td width="42%">Частота вращения коленвала</td>
+    <td width="14%">об/мин</td>
+    <td width="26%">1=40</td>
+  </tr>
+  <tr>
+    <td width="6%">2C</td>
+    <td width="12%">&nbsp;</td>
+    <td width="42%">&nbsp;</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">2E</td>
+    <td width="12%">JUFRXX</td>
+    <td width="42%">Табличная установка частоты на
+      ХХ</td>
+    <td width="14%">об/мин</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">34</td>
+    <td width="12%">JGBC</td>
+    <td width="42%">Цикловое наполнение</td>
+    <td width="14%">мг/ткт</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">38</td>
+    <td width="12%">NFRGBC</td>
+    <td width="42%">Положение режимной точки</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">39</td>
+    <td width="12%">VALF</td>
+    <td width="42%">Состав смеси</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">3D</td>
+    <td width="12%">JBTC</td>
+    <td width="42%">Цикловая подача газа</td>
+    <td width="14%">мг/ткт</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">3F</td>
+    <td width="12%">INJ</td>
+    <td width="42%">Длительность впрыска</td>
+    <td width="14%">мсек</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">41</td>
+    <td width="12%">RCOD</td>
+    <td width="42%">Коэф. коррекции СО (смещение)</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">45</td>
+    <td width="12%">COEF1</td>
+    <td width="42%">Коэф. коррекции топливоподачи (1 канал)</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">49</td>
+    <td width="12%">&nbsp;</td>
+    <td width="42%">Таблица топливоподачи 1</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">4A</td>
+    <td width="12%">&nbsp;</td>
+    <td width="42%">Таблица топливоподачи 2</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">4B</td>
+    <td width="12%">&nbsp;</td>
+    <td width="42%">Таблица топливоподачи с адс.1</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">4C</td>
+    <td width="12%">&nbsp;</td>
+    <td width="42%">Таблица топливоподачи с адс.2</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">4D</td>
+    <td width="12%">JALAM1</td>
+    <td width="42%">Напряжение сигнала 1 L-зонда</td>
+    <td width="14%">мВ</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">51</td>
+    <td width="12%">DUOZ1</td>
+    <td width="42%">Смещенин УОЗ по детонации для 1 цилиндра</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">52</td>
+    <td width="12%">DUOZ2</td>
+    <td width="42%">Смещенин УОЗ по детонации для 2 цилиндра</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">53</td>
+    <td width="12%">DUOZ3</td>
+    <td width="42%">Смещенин УОЗ по детонации для 3 цилиндра</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">54</td>
+    <td width="12%">DUOZ4</td>
+    <td width="42%">Смещенин УОЗ по детонации для 4 цилиндра</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">59</td>
+    <td width="12%">UGB</td>
+    <td width="42%">Установка расхода воздуха</td>
+    <td width="14%">кг/час</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">5B</td>
+    <td width="12%">SSM</td>
+    <td width="42%">Установка положения РДВ</td>
+    <td width="14%">шаг</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">5E</td>
+    <td width="12%">JADS</td>
+    <td width="42%">Степень продувки адсорбера</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">5F</td>
+    <td width="12%">JEGR</td>
+    <td width="42%">Степень рецилькуляции отработавших газов</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">61</td>
+    <td width="12%">JATWAT</td>
+    <td width="42%">Напр. дат. темпер. охл. жидкости</td>
+    <td width="14%">В</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">62</td>
+    <td width="12%">JATAIR</td>
+    <td width="42%">Напряжение дат. темпер. воздуха</td>
+    <td width="14%">В</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">64</td>
+    <td width="12%">JATHR</td>
+    <td width="42%">Напр. дат. положения дрос. заслонки</td>
+    <td width="14%">В</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">65</td>
+    <td width="12%">JARCO</td>
+    <td width="42%">Напряжение потенциометра СО</td>
+    <td width="14%">В</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">67</td>
+    <td width="12%">JAPABS</td>
+    <td width="42%">Напр. датчика абсолютного давления</td>
+    <td width="14%">В</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="6%">74</td>
+    <td width="12%">???</td>
+    <td width="42%">&nbsp;</td>
+    <td width="14%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+</table>
+
+
+<script language="Javascript">
+<!--hide
+
+var my_clientip = '195.161.24.6';
+
+setonclickmethods();
+setvisitorcookie(my_clientip);
+DisplayBRM(1);
+//-->
+</script>
+
+
+</body>
+</html>

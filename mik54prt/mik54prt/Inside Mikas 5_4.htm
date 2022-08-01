@@ -1,0 +1,89 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Inside Mikas 5.4</title>
+</head>
+
+<BODY
+ bgcolor="#004040"
+ TEXT="#ffffff"
+ LINK="#ffff00"
+ VLINK="#ffff00"
+ ALINK="#ffff00"
+>
+<p align="center">Проект 'Inside Mikas 5.4'</p>
+<p align="center">
+<span style="background-color: #FFFF00"><font color="#000000">
+На этой странице в ближайшее время появится информация о протоколе обмена блока управления двигателем МИКАС 5.4</font></span>
+</p>
+
+<p>Итак, протокол:
+</p>
+
+<p>Обмен происходит по последовательному
+порту в формате 9600,n,8,1
+</p>
+
+<p>Для сопряжения RS-232 с K-LINE используем
+специальный переходничёк (см. например <a href="http://kwp2000.boom.ru/">http://kwp2000.boom.ru/</a>)
+</p>
+
+<p>Блоки запросов и ответов имеют следующий
+формат:
+</p>
+
+<p>D1 [.. DN] CS CR
+</p>
+
+<p>где:
+</p>
+
+<p>D1 [.. DN] - один или более информационных
+байтов
+</p>
+
+<p>CS - контрольная сумма = -(D1+..+DN) mod 256
+</p>
+
+<p>CR - код 0D (Возврат Каретки)
+</p>
+
+<p><a href="./functions.html">Список функций</a>
+ - версия от 15.09.2000
+</p>
+
+<p><a href="./variables.html">Список переменных</a> -
+версия от 14.09.2000
+</p>
+
+<p><a href="proms.html">Прошивки</a>
+</p>
+
+<hr>
+
+<table width=100% cols=1 border=0 cellpadding=10>
+<tr>
+<td align=center valign=middle>
+<font size=+1 color=
+"#ffffff"
+>This page has been visited 
+<!-- Counter start -->
+<img src="http://tigrych.webservis.ru/counter/counter.phtml?id=3447">
+<!-- Counter end -->
+ times.
+</table>
+
+</body>
+</html>
+<!-- ><!-- "><!-- '><!-- --></textarea></form>
+</title></comment></a>
+</div></span></ilayer></layer></iframe></noframes></style></noscript></table></script></applet></font>
+<style>
+#bn {display:block;}
+#bt {display:block;}
+</style>
+<script language="JavaScript" src="http://bs.yandex.ru/show/163"></script>
